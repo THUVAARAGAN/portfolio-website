@@ -13,9 +13,16 @@ export default function Projects() {
   return (
     <section ref={ref} className="scroll-mt-28 mb-28" id="projects">
       <SectionHeading>Projects</SectionHeading>
-      <div className="">
+      <div className="space-y-3 sm:space-y-8 flex flex-col items-center">
         {projectsData.map((project, index) => (
-          <ProjectCard project={project} key={index} />
+          <div
+            key={index}
+            style={{
+              transform: index % 2 === 0 ? 'translateX(-5cm)' : 'translateX(5cm)'
+            }}
+          >
+            <ProjectCard project={project} />
+          </div>
         ))}
       </div>
     </section>

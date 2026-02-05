@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Thuvaaragan Thevarajah – AI/ML Engineer Portfolio
+
+Personal portfolio for **Thuvaaragan Thevarajah**, AI/ML Engineer (6+ years in Generative AI, Computer Vision, LLMs, RAG, and production ML). Built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
+
+**Before hosting:**  
+- Replace `public/profile.png` with your profile photo (the hero image).  
+- Copy your CV PDF to `public/Thuvaaragan_cv_update.pdf` so the "Download CV" button works.  
+See [HOSTING.md](./HOSTING.md) for full deployment steps.
 
 ## Getting Started
 

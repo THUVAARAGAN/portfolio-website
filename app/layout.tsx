@@ -13,9 +13,36 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "Sinthujan | Personal portfolio",
+  title: "Thuvaaragan Thevarajah | AI/ML Engineer Portfolio | Generative AI, Computer Vision, LLMs",
   description:
-    "Sinthujan is a skilled full-stack web developer specializing in Next.js, delivering modern and efficient web solutions.",
+    "AI/ML Engineer specializing in Generative AI, Computer Vision, LLMs, RAG, and production ML. 6+ years building innovative AI solutions that drive real-world impact. Expert in LangChain, PyTorch, AWS, Azure, and agentic systems.",
+  keywords: [
+    "AI Engineer",
+    "ML Engineer",
+    "Generative AI",
+    "Computer Vision",
+    "LLM",
+    "Large Language Models",
+    "RAG",
+    "Retrieval-Augmented Generation",
+    "LangChain",
+    "LlamaIndex",
+    "PyTorch",
+    "TensorFlow",
+    "AWS",
+    "Azure",
+    "Production ML",
+    "AI Agents",
+    "Machine Learning",
+    "Deep Learning",
+    "NLP",
+    "Natural Language Processing",
+  ].join(", "),
+  openGraph: {
+    title: "Thuvaaragan Thevarajah | AI/ML Engineer Portfolio",
+    description: "AI/ML Engineer specializing in Generative AI, Computer Vision, LLMs, RAG, and production ML. Building innovative AI solutions that drive real-world impact.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -26,10 +53,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${poppins.className} bg-gray-100 text-gray-950 relative pt-28 sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
+        className={`${poppins.className} bg-slate-50 text-slate-900 relative pt-28 sm:pt-36 dark:bg-slate-950 dark:text-slate-50`}
       >
-        <div className="bg-[#fbe2e3] absolute -z-10 top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>
-        <div className="bg-[#dbd7fb] absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-[#676394]"></div>
+        <div className="bg-emerald-200/60 absolute -z-10 top-[-6rem] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-emerald-900/30"></div>
+        <div className="bg-sky-200/50 absolute -z-10 top-[-1rem] left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] dark:bg-sky-900/25"></div>
         <ActiveSectionContextProvider>
           <Header />
           {children}

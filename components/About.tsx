@@ -12,7 +12,7 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-7 sm:mb-40 scroll-mt-28"
+      className="mb-28 max-w-[45rem] text-center leading-7 sm:mb-40 scroll-mt-28 text-slate-700 dark:text-slate-300"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
@@ -22,27 +22,29 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I&apos;m an undergraduate in{" "}
-        <span className="font-medium">Computer Science and Engineering </span>at
-        the University of Moratuwa, specializing in{" "}
-        <span className="font-medium">full stack web development. </span>My core
-        stack includes <span className="font-medium">Next.js</span> for both
-        front-end and back-end development,{" "}
-        <span className="font-medium">MongoDB</span> for database management,
-        and Prisma ORM for efficient data modeling and handling. I focus on
-        building web applications with seamless server-side capabilities using
-        Next.js server actions and fast styling with{" "}
-        <span className="font-medium">Tailwind CSS.</span> I&apos;m dedicated to
-        creating scalable solutions and continuously expanding my knowledge in
-        the field.
+        I am a seasoned{" "}
+        <span className="font-medium">AI/ML Engineer</span> with 6 years of
+        experience specializing in{" "}
+        <span className="font-medium">Generative AI, Computer Vision, AI Agents,
+        Large Language Models (LLMs), NLP, and Deep Learning.</span> I thrive in
+        fast-paced environments, excelling at rapid learning, problem-solving, and
+        collaborating within dynamic teams to deliver production-ready AI solutions
+        with measurable business impact.
       </p>
       <p className="mb-3">
-        As a hobby, I also enjoy{" "}
-        <span className="font-medium">Game development.</span> I&apos;m familiar
-        with the <span className="font-medium">Unity game engine and C#,</span>{" "}
-        and I love crafting interactive gaming experiences in my spare time.
-        It&apos;s a creative outlet that complements my technical skills and
-        fuels my passion for software development.
+        What excites me most about AI is its ability to solve real-world problems that truly make a difference. 
+        I&apos;m driven by seeing how AI can transform industries—from building assistive 
+        technologies for the visually impaired, to optimizing business operations, to creating intelligent systems 
+        that augment human capabilities. I envision a future where AI seamlessly integrates into everyday life, 
+        simplifying complex tasks and unlocking new possibilities.
+      </p>
+      <p className="mb-3">
+        I enjoy tackling challenging problems and managing end-to-end AI projects, ranging from agentic voice 
+        systems and RAG-powered chatbots to vision-based smart parking systems (TADHack 2022 – 2nd Runner-Up) 
+        and spatial image captioning for assistive technology (IEEE Innovative Challenge 2023 – Finalist). 
+        I hold a{" "}
+        <span className="font-medium">BSc. Eng. (Hons.)</span> in Electronic &
+        Telecommunication Engineering from the University of Moratuwa, with a CGPA of 3.69.
       </p>
     </motion.section>
   );

@@ -10,14 +10,15 @@ export default function Header() {
     useActiveSectionContext();
 
   return (
-    <header className="z-[999] relative">
+    <header className="z-[9999] relative">
       <motion.div
-        className="flex fixed top-0 left-1/2 h-[3rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[30rem] sm:rounded-full  dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
+        className="flex fixed top-0 left-1/2 h-[3rem] w-full rounded-none border border-slate-200/60 bg-white/95 shadow-lg shadow-slate-900/5 backdrop-blur-[0.75rem] sm:top-6 sm:h-[3.25rem] sm:w-[56rem] sm:rounded-full dark:bg-slate-900/95 dark:border-slate-700/50 sm:px-12"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
+        style={{ zIndex: 9999, isolation: "isolate" }}
       ></motion.div>
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.8rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
+      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0 z-[10000]">
+        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.75rem] font-medium text-slate-500 sm:w-[initial] sm:flex-nowrap sm:gap-3 sm:text-[0.85rem] sm:px-4">
           {links.map((link) => (
             <motion.li
               className="h-3/4 flex items-center justify-center relative"
@@ -27,9 +28,9 @@ export default function Header() {
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex w-full items-center justify-center px-2 py-3 hover:text-slate-950 transition dark:text-slate-400 dark:hover:text-slate-100 whitespace-nowrap relative z-10",
                   {
-                    "text-gray-950 dark:text-gray-200":
+                    "text-slate-950 dark:text-slate-100":
                       activeSection === link.name,
                   }
                 )}
@@ -42,7 +43,7 @@ export default function Header() {
                 {link.name}
                 {link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-200 rounded-full absolute inset-0 -z-10 dark:bg-gray-700"
+                    className="bg-slate-200 rounded-full absolute inset-0 -z-10 dark:bg-slate-700"
                     layoutId="activeSection"
                     transition={{
                       type: "spring",
